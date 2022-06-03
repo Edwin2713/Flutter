@@ -31,8 +31,9 @@ class _ContadorPantallaState extends State<ContadorPantalla> {
     
     return  Scaffold(
       backgroundColor: const Color.fromARGB(255, 237, 239, 243),
+      
       appBar: AppBar(
-        title:  const Text("Contador"),
+        title:  const Text(" APP Contador", textAlign: TextAlign.right,),
         elevation: 0,
       ),
       body: Center(
@@ -40,7 +41,7 @@ class _ContadorPantallaState extends State<ContadorPantalla> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children:  [
-                const Text("PANTALLA DE INICIO", style: fontSize),
+                const Text("Numero de Clicks", style: fontSize),
                 Text('$contador', style: fontSize),
               ],
             ),
